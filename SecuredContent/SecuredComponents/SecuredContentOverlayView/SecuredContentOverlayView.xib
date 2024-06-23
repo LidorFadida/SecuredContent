@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecuredContentOverlayView" customModule="TableController" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="HJw-5x-EqD" id="HOn-XP-HFE"/>
+                <outlet property="subtitleLabel" destination="bJl-uU-9pn" id="4nm-j3-jYO"/>
+                <outlet property="titleLabel" destination="r7e-6a-7Og" id="bDl-iv-rWd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HJw-5x-EqD" userLabel="Icon Image View">
+                    <rect key="frame" x="146.66666666666666" y="135.33333333333331" width="100" height="105.33333333333334"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HJw-5x-EqD" secondAttribute="height" multiplier="1:1" id="533-ZH-cUm"/>
+                        <constraint firstAttribute="width" constant="100" id="nWc-n6-e81"/>
+                    </constraints>
+                    <imageReference key="image" image="video.slash.circle" catalog="system" symbolScale="large" variableValue="0.20000000000000007"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-4G-HhX">
+                    <rect key="frame" x="42.333333333333343" y="279.66666666666669" width="308.33333333333326" height="226.66666666666669"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Recording Blocked" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7e-6a-7Og" userLabel="Title Label">
+                            <rect key="frame" x="34.999999999999986" y="0.0" width="238.66666666666663" height="60.333333333333336"/>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="27"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It lloks like you tried to make a screen recording. For added privacy, view once messages don׳t let you do this." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJl-uU-9pn" userLabel="Subtitle Label">
+                            <rect key="frame" x="0.0" y="92.333333333333329" width="308.33333333333331" height="134.33333333333337"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ⓒ Lidor Fadida " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAY-sq-N7i" userLabel="Credit Label">
+                    <rect key="frame" x="132.33333333333337" y="757" width="128.66666666666663" height="19"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" systemColor="systemBlueColor"/>
+            <constraints>
+                <constraint firstItem="HJw-5x-EqD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Iyx-nC-QcX"/>
+                <constraint firstItem="xAY-sq-N7i" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-42" id="VKm-oO-YgB"/>
+                <constraint firstItem="HiB-4G-HhX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="42" id="Xdt-R0-2N6"/>
+                <constraint firstItem="HJw-5x-EqD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="78.666666666666657" id="aiq-Vs-PoG"/>
+                <constraint firstItem="HiB-4G-HhX" firstAttribute="centerX" secondItem="HJw-5x-EqD" secondAttribute="centerX" id="imN-b4-jee"/>
+                <constraint firstItem="HiB-4G-HhX" firstAttribute="top" secondItem="HJw-5x-EqD" secondAttribute="bottom" constant="41.999999999999943" id="mIb-kG-lCm"/>
+                <constraint firstItem="xAY-sq-N7i" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mWf-zt-L76"/>
+                <constraint firstItem="HiB-4G-HhX" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-42" id="qiA-C0-5Vh"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video.slash.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
